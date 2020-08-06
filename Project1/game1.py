@@ -27,25 +27,23 @@ def number_to_name(number):
 
 def rpsls(player_choice):
     
-    print 
+    print ()
     
-    print 'Player chooses',player_choice
-    
+    print ('Player chooses',player_choice)
     player_value=name_to_number(player_choice)
-
     comp_value=random.randrange(0,4)
-
+    
     number_to_name(comp_value)
     result=(player_value-comp_value)%5
 
-    print 'Computer chooses',number_to_name(comp_value)
+    print ('Computer chooses',number_to_name(comp_value))
     
     if ((result%5)==1) or ((result%5)==2):
-        print 'Player wins!'
+        print ('Player wins!')
     elif ((result%5)==3) or ((result%5)==4):
-        print 'Computer wins!'
+        print ('Computer wins!')
     else:
-        print 'Player and computer tie!'
+        print ('Player and computer tie!')
 
     
 #Test!!!
