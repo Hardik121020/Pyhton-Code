@@ -1,0 +1,55 @@
+t = input().split()
+2
+N = int(t[0])
+3
+M = int(t[1])
+4
+​
+5
+list_1 = []
+6
+start =1
+7
+end = 101
+8
+for i in range(start,end+1):
+9
+    if i%2 !=0:
+10
+        list_1.append(i)
+11
+​
+12
+count = 0
+13
+s2 = "WELCOME"
+14
+n = int(N/2)
+15
+​
+16
+for i in range(N):
+17
+    count =count +1
+18
+    s =".|."
+19
+   # print(i)
+20
+    if count == n+1:
+21
+        print(s2.center(M,"-"))
+22
+    elif count <= int(n):
+23
+        s=s*list_1[i]
+24
+        print(s.center(M,"-"))
+25
+    elif count >= n+2:
+26
+        s = s*list_1[n-1]
+27
+        print(s.center(M,"-"))
+28
+        n = n -1
